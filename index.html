@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src='index.js'></script>
+</head>
+<body>
+    <div class="header">
+        <h1>✧･ﾟ:* calculator *:･ﾟ✧</h1>
+    </div>
+    <div class="container">
+        <div class="panel" id="result"></div>
+        <button class="double" onclick="allClear()">AC</button>
+        <button onclick="lastDelete()">DEL</button>
+        <button id ="1" onclick="selectOpperation('/',1)">÷</button>
+        <button onclick="addNumberA('1')">1</button>
+        <button onclick="addNumberA('2')">2</button>
+        <button onclick="addNumberA('3')">3</button>
+        <button id ="2" onclick="selectOpperation('x',2)">x</button>
+        <button onclick="addNumberA('4')">4</button>
+        <button onclick="addNumberA('5')">5</button>
+        <button onclick="addNumberA('6')">6</button>
+        <button id ="3" onclick="selectOpperation('+',3)">+</button>
+        <button onclick="addNumberA('7')">7</button>
+        <button onclick="addNumberA('8')">8</button>
+        <button onclick="addNumberA('9')">9</button>
+        <button id ="4" onclick="selectOpperation('-',4)">-</button>
+        <button onclick="addNumberA('.')">.</button>
+        <button onclick="addNumberA('0')">0</button>
+        <button class="double" onclick="getResult()">=</button>
+    </div>
+</body>
+</html>
